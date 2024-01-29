@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+              *{
+                  padding: 0;
+                  margin: 0;
+                  box-sizing: border-box;
+              }
+              a:link{
+                  margin: 30px;
+                  color:rgb(11, 11, 11)
+              }
+              a:visited{
+                  color: chartreuse;
+              }
+              a:hover{
+                  font-size: 30px;
+                  color: red;
+                  background-color: black;
+              }
+              a:active{
+                  color: darkgoldenrod;
+              }
+              input{
+                  margin: 20px;
+                  display: block;
+                  width: 150px;
+                  height: 30px;
+              }
+              input::placeholder{
+                  color: rgb(97, 100, 0);
+                  font-size: 20px;
+                  text-decoration: underline;
+              }
+              button{
+                  margin: 300px;
+                  font-size: 60px;
+                  width: 350px;
+                  height: 100px;
+                  position: relative;
+                  background:transparent;
+              }
+              button::before{
+                  content: " ";
+                  width: 0%;
+                  height: 0%;
+                  background-color: gold;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  z-index: -1;
+              }
+              button:hover::before{
+                  height: 100%;
+                  width: 100%;
+                  transition: 0.5s;
+
+              }
+              div{
+                  height: 100vh;
+                  width: 100vw;
+                  text-align: center;
+                  line-height: 100vh;
+                  font-size: 100px;
+                  position: relative;
+                  color: rgb(9, 9, 9);
+              }
+              div::before{
+                  content: "New";
+                  font-size: 50px;
+                  color: rgb(100, 6, 24);
+                  font-weight: bold;
+                  position: absolute;
+                  top: -61px;
+                  left: 381px;
+              }
+      div::after{
+          content: "Web Development";
+                  font-size: 30px;
+                  color: rgb(255, 196, 0);
+                  font-weight: bold;
+                  position: absolute;
+                  bottom: -51px;
+                  right: 375px;
+              }
+      
+              p::first-line{
+                color: darkgreen;
+              }
+              p::first-letter{
+                font-size: 30px;
+
+              }
+              
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="https://www.youtube.com/"> youtube</a>
+    <br />
+    <br />
+    <input type="text" placeholder="search here......" />
+    <br />
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel placeat odio
+      qui, sint, itaque et nulla voluptas nobis porro impedit, sapiente
+      cupiditate ipsa quos tempora tenetur quia pariatur iure possimus. Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempore
+      quam perspiciatis delectus itaque cum aut distinctio. Atque reprehenderit
+      odio sunt repudiandae quidem quo, modi cumque nobis aspernatur dolore
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+      consequatur repudiandae velit, voluptatum obcaecati amet commodi quas nam
+      suscipit iure qui, doloribus perspiciatis laborum rerum ipsum totam
+      nesciunt voluptates magnam!
+    </p>
+    <button>Button</button>
+    <div>MeerMudasir</div>
+    <a href="index1.html"> next page is here.</a>
+  </body>
+</html>
